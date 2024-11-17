@@ -4,87 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComeSano - Comedor Infantil</title>
+    <title>Portafolio - Lora Krasimirova Adova</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="ComeSano Logo" >
-                <h1>ComeSano</h1>
-            </div>
-            <ul>
-                <li><a href="#about">¿Quiénes Somos?</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#commitment">Compromiso</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-            <a href="#register" class="btn-register">Regístrate</a>
-        </nav>
+        <div class="container">
+
+            <h1>Lora Krasimirova Adova</h1>
+            <p>Programadora y estudiante de ciberseguridad</p>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>Una alimentación saludable para el futuro </h2>
-                <p>ComeSano es un comedor infantil dedicado a ofrecer una nutrición equilibrada y deliciosa, promoviendo
-                    hábitos saludables desde temprana edad.</p>
-                <a href="#about" class="btn-main">Descubre Más</a>
+        <section id="sobre-mi">
+            <div class="container">
+                <h2>Sobre Mí</h2>
+                <img src="img/FOTO-LKA.jpg" alt="Imagen de Lora" class="intro-image">
+                <p class="intro-text">
+                    Hola, soy Lora Krasimirova Adova. Nací en Bulgaria y tengo 32 años. Soy programadora y estudiante de
+                    Ciberseguridad, especializada en el área de Red Team. Comencé mi carrera profesional como crupier en el
+                    Casino de Madrid durante 8 años y, en 2022, decidí estudiar Desarrollo de Aplicaciones Web, carrera que
+                    estoy cursando actualmente.
+                </p>
             </div>
-            <img id="main-img" src="img/main_img.jpg" alt="Niños comiendo saludablemente">
         </section>
-
-        <section id="about">
-            <h3>¿Quiénes Somos?</h3>
-            <p>En ComeSano, nos especializamos en nutrición infantil, asegurando que cada menú esté balanceado y
-                preparado con ingredientes frescos y de alta calidad.</p>
-        </section>
-
-        <section id="services">
-            <h3>Nuestros Servicios</h3>
-            <div class="service-cards">
-                <div class="service-card">
-                    <img src="img/menu.jpg" alt="Menú semanal">
-                    <h4>Menús Semanales</h4>
-                    <p>Elaboramos menús semanales con variedad de platos que cubren todas las necesidades nutricionales
-                        de los niños.</p>
+        <section id="experiencia">
+            <div class="container">
+                <h2>Experiencia</h2>
+                <div class="experiencia-item">
+                    <h3>Backend Developer - Kamasys</h3>
+                    <p><em>2022 - 2024</em></p>
+                    <p>Trabajé en el desarrollo de aplicaciones backend para Kamasys, una empresa alemana, donde me
+                        enfoqué en optimización de procesos y desarrollo de soluciones eficientes.</p>
                 </div>
-                <div class="service-card">
-                    <img src="img/asesoria.jpg" alt="Asesoría nutricional">
-                    <h4>Asesoría Nutricional</h4>
-                    <p>Contamos con expertos en nutrición infantil que trabajan para desarrollar los mejores menús.</p>
-                </div>
-                <div class="service-card">
-                    <img src="img/evaluacion.png" alt="Evaluación de bienestar">
-                    <h4>Evaluación de Bienestar</h4>
-                    <p>Monitoreamos la salud de los niños a través de evaluaciones periódicas de bienestar y
-                        preferencias alimenticias.</p>
+                <div class="experiencia-item">
+                    <h3>Crupier - Casino de Madrid</h3>
+                    <p><em>2013 - 2020</em></p>
+                    <p>Adquirí habilidades interpersonales, atención al detalle y gestión del tiempo mientras trabajaba
+                        como crupier en uno de los casinos más prestigiosos de España.</p>
                 </div>
             </div>
         </section>
 
-        <section id="commitment">
-            <h3>Nuestro Compromiso</h3>
-            <p>Nos comprometemos a brindar un ambiente seguro y nutritivo, promoviendo una alimentación consciente en
-                cada etapa del desarrollo infantil.</p>
+        <section id="hobbies">
+            <div class="container">
+                <h2>Hobbies</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby">
+                        <p>Tocar la guitarra</p>
+                        <div class="hobby-card">
+                            <i class="icon">🎸</i>
+                            <p>Me encanta tocar la guitarra como forma de expresión artística.</p>
+                        </div>
+                    </div>
+                    <div class="hobby">
+                        <p>Crear cosmética natural</p>
+                        <div class="hobby-card">
+                            <i class="icon">🌿</i>
+                            <p>Disfruto crear productos naturales para el cuidado personal.</p>
+                        </div>
+                    </div>
+                    <div class="hobby">
+                        <p>Robótica</p>
+                        <div class="hobby-card">
+                            <i class="icon">🤖</i>
+                            <p>Me apasiona construir y programar pequeños robots.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h3>Contacto</h3>
-            <form>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit" class="btn-submit">Enviar mensaje</button>
-            </form>
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 ComeSano. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>© 2024 Lora Krasimirova Adova - Todos los derechos reservados</p>
+        </div>
     </footer>
 </body>
 

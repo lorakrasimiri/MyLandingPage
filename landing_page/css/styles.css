@@ -1,182 +1,243 @@
-
-* {
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #FAFAFA;
+    color: #333;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #3E3E3E;
-    background-color: #F4F4F4;
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: #a1c998;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.intro-image {
+    width: 110;
+    height: 150px;
+    border: #a1c998 5px solid;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.intro-text::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #a1c998;
+    float: left;
+    line-height: 1;
+    margin-right: 8px;
+}
+
+
+
+a:hover {
+    color: #9a6cd7;
 }
 
 header {
-    background-color: #FFEFBB;
-    padding: 1em;
+    background-color: #cac1d6;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
 }
 
-nav {
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    color: #FFF;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+}
+
+#sobre-mi {
+    padding: 40px 0;
+    background-color: #FFF;
+    border-bottom: 1px solid #EEE;
+}
+
+#sobre-mi h2 {
+    color: #a1c998;
+    margin-bottom: 15px;
+}
+
+#sobre-mi p {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+#experiencia {
+    padding: 40px 0;
+    background-color: #F9F9F9;
+    border-bottom: 1px solid #EEE;
+}
+
+#experiencia h2 {
+    color: #a1c998;
+    margin-bottom: 20px;
+}
+
+.experiencia-item {
+    margin-bottom: 20px;
+}
+
+.experiencia-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.experiencia-item p em {
+    font-style: italic;
+    color: #666;
+}
+
+#hobbies {
+    padding: 40px 0;
+    background-color: #FFF;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+
+}
+
+#hobbies h2 {
+    color: #a1c998;
+    margin-bottom: 20px;
+}
+
+.hobbies-grid {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5em;
-}
-
-nav a {
-    text-decoration: none;
-    color: #3E3E3E;
-    font-weight: bold;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    font-size: 1.8em;
-    color: #F2B705;
-}
-
-
-.logo img {
-    width: 80px;
-    height: auto;
-    margin-right: 10px;
-}
-
-
-.btn-register {
-    background-color: #F2B705;
-    color: #FFF;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-}
-
-#hero {
-    display: flex;
-    align-items: center;
-    padding: 2em;
-    background-color: #FFEFBB;
-}
-
-.hero-content {
-    max-width: 600px;
-    padding: 1em;
-}
-
-#hero h2 {
-    font-size: 2.5em;
-    color: #8C451C;
-}
-
-#hero p {
-    font-size: 1.2em;
-    margin: 1em 0;
-}
-
-#hero img {
-    width: 600px;
-    height: auto;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-
-.btn-main {
-    background-color: #6E59D9;
-    color: #FFF;
-    padding: 0.7em 1.5em;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-#about, #commitment {
-    padding: 2em;
+.hobby {
+    width: 30%;
     text-align: center;
-    background-color: #F4F4F4;
+    position: relative;
+    cursor: pointer;
+    border: #a1c998 5px solid;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h3 {
-    font-size: 2em;
-    color: #F2B705;
-    margin-bottom: 0.5em;
+.hobby p {
+    margin: 10px 0;
 }
 
-#services {
-    padding: 2em;
-    background-color: #E0E0E0;
-    text-align: center;
-}
-
-.service-cards {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.service-card {
-    background: #FFF;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    width: 300px;
-    text-align: left;
-}
-
-.service-card img {
-    width: 100%;
-    height: 150px;
-    border-radius: 8px 8px 0 0;
-}
-
-.service-card h4 {
-    font-size: 1.5em;
-    color: #6E59D9;
-    margin: 0.5em 0;
-}
-
-#contact {
-    padding: 2em;
-    text-align: center;
+.hobby-card {
+    display: none;
     background-color: #FFF;
+    padding: 10px;
+    margin-top: 10px;
+
+    border: #a1c998 1px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 10;
+    text-align: center;
+}
+
+.hobby:hover .hobby-card {
+    display: block;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+#contacto {
+    padding: 40px 0;
+    background-color: #F9F9F9;
+}
+
+#contacto h2 {
+    color: #a1c998;
+    margin-bottom: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
-    gap: 1em;
 }
 
-input, textarea {
-    padding: 0.8em;
-    border: 1px solid #BEBEBE;
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDD;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.btn-submit {
-    background-color: #6E59D9;
+form button {
+    display: inline-block;
+    background-color: #a1c998;
     color: #FFF;
-    padding: 0.8em;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #385831;
 }
 
 footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #3E3E3E;
+    background-color: #cac1d6;
     color: #FFF;
+    text-align: center;
+    padding: 20px 0;
     font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
 }
